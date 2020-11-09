@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.DoctorDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_doc"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:src="@drawable/dumy_profile_pic"/>
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_doc"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_doc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr Adam"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_doc_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Specialist"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorGreenPsy"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_star"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_doc_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doc_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="St Brooks lane, Nevada"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="16sp"/>
+
+
+          </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doc_bio_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doc_bio"
+            android:layout_below="@+id/iv_doc"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_doc_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/large_dummy_text"
+            android:layout_below="@+id/tv_doc_bio_title"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_doc_bio"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_info_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorGreenPsy">
+
+                <TextView
+                    android:id="@+id/tv_doc_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timings"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_doc_timings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:30 pm - 8:30 pm   (All days)"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_doc_charg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charges"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_doc_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$700 / session"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/packages_avail"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_doc_pack_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/packages"
+            android:layout_below="@+id/cardView_one"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_doc_pack_title"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_info_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorGreenPsy">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 mins"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_doc_price_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$700"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Month"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_doc_price_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1700"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="60 mins"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_doc_price_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$300"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Month"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_doc_price_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2700"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/rl_book_appointment"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/cardView_two"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/ic_red_btn_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_appointment"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

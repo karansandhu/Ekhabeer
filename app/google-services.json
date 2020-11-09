@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1072172628730",
+    "firebase_url": "https://ekhabeer-a7c5f.firebaseio.com",
+    "project_id": "ekhabeer-a7c5f",
+    "storage_bucket": "ekhabeer-a7c5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072172628730:android:a6d703ea1243151bdbe743",
+        "android_client_info": {
+          "package_name": "com.app.ekhabeer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072172628730-itsimfs7mcat6kisi44va2cko42ckop6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.ekhabeer",
+            "certificate_hash": "fdb63f002a8e66a84143a99fd86343430a5c1e04"
+          }
+        },
+        {
+          "client_id": "1072172628730-1n83lphqghlenbm1k322n9rog530v1h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpyGNU58SB69EpUbtEDp8sm9tsQPxVrvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072172628730-1n83lphqghlenbm1k322n9rog530v1h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_grid_item"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/rl_time_bg">
+
+
+        <TextView
+            android:id="@+id/tv_grid_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:text="9:00 AM"
+            android:fontFamily="@font/poppins_medium"/>
+
+</RelativeLayout>

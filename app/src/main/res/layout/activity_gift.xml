@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.GiftActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tv_gift_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small_dummy_text"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_toLeftOf="@+id/iv_gift"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gift"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_gift"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/another_username"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/another_email"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_title"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/special_code"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/iv_gift"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_gift_bg">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_book_appointment"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_below="@+id/cardView_two"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/ic_red_btn_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

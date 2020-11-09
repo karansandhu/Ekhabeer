@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_doc"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    app:cardElevation="10dp"
+    android:elevation="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/rl_doc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreenPsy">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_doc"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/dumy_profile_pic"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_doc"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ll_two"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_doc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Addiction"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_doc_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Specialist"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorRedText"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_doc_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="St Brooks lane, Nevada"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_star"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tv_doc_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
